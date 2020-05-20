@@ -1,0 +1,95 @@
+.btn {
+  border-width: 1px;
+  border-color: #353279;
+  border-style: solid;
+  border-radius: 3px;
+  padding: 12px 15px;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn + .btn {
+  margin-left: 5px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary {
+  background-color: #0c769e !important;
+  border-color: #0c769e !important;
+}
+
+.btn-secondary {
+  background-color: #353042 !important;
+  border-color: #353042 !important;
+}
+
+.btn-success {
+  background-color: #178c66;
+  border-color: #178c66;
+}
+
+.btn-danger {
+  background-color: rgba(237, 21, 21, 0.62);
+  border-color: rgba(237, 21, 21, 0.62);
+}
+
+.btn-outline-theme {
+  background-color: transparent;
+  border: 1px solid #353279;
+  color: #353279;
+}
+
+.custom-control {
+  position: relative;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.custom-control-label {
+  color: #353535;
+  font-size: 22px;
+  position: relative;
+  vertical-align: top;
+}
+
+.custom-control-label:before, .custom-control-label:after {
+  content: "";
+  position: absolute;
+  top: .25rem;
+  left: -1.5rem;
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 2px solid #8f8f8f;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.custom-control-input {
+  opacity: 0;
+}
+
+.custom-control-input:checked ~ .custom-control-label:before, .custom-control-input:checked ~ .custom-control-label:after {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  border: none;
+}
+
+.custom-control-input:checked ~ .custom-control-label::after {
+  background-color: #ffffff;
+  border: 5px solid #353279;
+}
+
+body {
+  color: red;
+}
+/*# sourceMappingURL=main.css.map */

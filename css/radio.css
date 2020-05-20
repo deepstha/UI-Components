@@ -1,0 +1,46 @@
+.custom-control {
+  position: relative;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.custom-control-label {
+  color: #353535;
+  font-size: 22px;
+  position: relative;
+  vertical-align: top;
+}
+
+.custom-control-label:before, .custom-control-label:after {
+  content: "";
+  position: absolute;
+  top: .25rem;
+  left: -1.5rem;
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 2px solid #8f8f8f;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.custom-control-input {
+  opacity: 0;
+}
+
+.custom-control-input:checked ~ .custom-control-label:before, .custom-control-input:checked ~ .custom-control-label:after {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  border: none;
+}
+
+.custom-control-input:checked ~ .custom-control-label::after {
+  background-color: #ffffff;
+  border: 5px solid #353279;
+}
+/*# sourceMappingURL=radio.css.map */
