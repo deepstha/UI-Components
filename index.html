@@ -16,6 +16,90 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+        <!-- Text Field -->
+        <h4>Button Style</h4>
+        <div class="col-d-5">
+            <div class="input_control">
+                <div class="input_slot is-outline">
+                    <div class="text-field">
+                    <label>Outlined</label>
+                    <input type="text" class="checked">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <button onclick="myFunction()">Try it</button> -->
+            <div class="input_control">
+                <div class="input_slot">
+                    <div class="text-field">
+                      <label>Append</label>
+                      <input type="text" class="checked">
+                    </div>
+                </div>
+            </div>
+
+            <div class="input_control regular">
+                <div class="input_slot">
+                    <div class="text-field">
+                      <label>Regular</label>
+                      <input type="text" class="checked">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- Text Field -->
+            <h4>Card Item</h4>
+            <div class="card card__wrapper">
+                <figure class="img__wrap">
+                    <img src="..." alt="" >
+                </figure>
+                <div class="p-2">
+                    <div class="card__title">Card Title</div>
+                    <div class="card__sub-title">Secondary text</div>
+                </div>
+            </div>
+                        
+            <br>
+            <br>
+            <!-- Text Field -->
+            <h4>List Item</h4>
+            <div class="form-field d-inline-flex m-r-5">
+                <div class="checkbox">
+                    <input type="checkbox" class="checkbox__control" id="check-item">
+                    <div class="checkbox__bg">
+                        <svg class="checkbox__checkmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 125" version="1.1" x="0px" y="0px">
+                            <g stroke="none" stroke-width="1" fill-rule="evenodd">
+
+                                <path class="checkbox__checkmark-path" d="M43.8717381,61.243064 L30.4096681,47.7809939 C29.1733839,46.5447098 27.1682962,46.5478583 25.9296538,47.7865007 C24.6935317,49.0226228 24.6885458,51.0309139 25.924147,52.266515 L41.6344843,67.9768524 C42.8707685,69.2131366 44.8758562,69.2099881 46.1144987,67.9713456 C46.141398,67.9444463 46.1677143,67.9171813 46.1934476,67.8895666 C46.221258,67.8636377 46.2487279,67.8371164 46.2758417,67.8100026 L77.6705794,36.4152648 C78.9103016,35.1755427 78.9086564,33.1639109 77.6725344,31.9277888 C76.4338919,30.6891464 74.4325733,30.6822288 73.1850584,31.9297437 L43.8717381,61.243064 Z"/>
+
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="checkbox__ripple"></div>
+                </div>
+                <label for="check-item">Item 1</label>
+            </div>
+            
+            <div class="form-field d-inline-flex">
+                <div class="checkbox">
+                    <input type="checkbox" class="checkbox__control" id="check-item">
+                    <div class="checkbox__bg">
+                        <svg class="checkbox__checkmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 125" version="1.1" x="0px" y="0px">
+                            <g stroke="none" stroke-width="1" fill-rule="evenodd">
+
+                                <path class="checkbox__checkmark-path" d="M43.8717381,61.243064 L30.4096681,47.7809939 C29.1733839,46.5447098 27.1682962,46.5478583 25.9296538,47.7865007 C24.6935317,49.0226228 24.6885458,51.0309139 25.924147,52.266515 L41.6344843,67.9768524 C42.8707685,69.2131366 44.8758562,69.2099881 46.1144987,67.9713456 C46.141398,67.9444463 46.1677143,67.9171813 46.1934476,67.8895666 C46.221258,67.8636377 46.2487279,67.8371164 46.2758417,67.8100026 L77.6705794,36.4152648 C78.9103016,35.1755427 78.9086564,33.1639109 77.6725344,31.9277888 C76.4338919,30.6891464 74.4325733,30.6822288 73.1850584,31.9297437 L43.8717381,61.243064 Z"/>
+
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="checkbox__ripple"></div>
+                </div>
+                <label for="check-item">Item 2</label>
+            </div>
+        </div>
+        <hr>
+    <br>
     <h4>Button Style</h4>
     <div class="buttons">
         <button class="btn btn-primary">Button Primary</button>
@@ -33,14 +117,15 @@
     <label class="custom-control-label" for="defaultUnchecked">Default unchecked</label>
   </div>
   
-  <!-- Default checked -->
-  <div class="custom-control custom-radio">
-    <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
-    <label class="custom-control-label" for="defaultChecked">Default checked</label>
-  </div>
-
+    <!-- Default checked -->
+    <div class="custom-control custom-radio">
+        <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
+        <label class="custom-control-label" for="defaultChecked">Default checked</label>
+    </div>
 
 
 
 </body>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script src="js/main.js"></script>
 </html>
