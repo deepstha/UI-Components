@@ -193,8 +193,8 @@
 }
 
 .input_control.regular .input_slot .text-field label.is-focus, .input_control.regular .input_slot .text-field label.is-active {
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
+  -webkit-transform: translateY(-23px);
+          transform: translateY(-23px);
   background-color: white;
   padding: 0;
   font-size: 65%;
