@@ -223,7 +223,7 @@
 }
 
 .custom-control-label {
-  color: #353535;
+  color: #333333;
   font-size: 22px;
   position: relative;
   vertical-align: top;
@@ -288,7 +288,7 @@
   letter-spacing: .0178571429em;
   text-decoration: inherit;
   text-transform: inherit;
-  opacity: .6;
+  opacity: .9;
 }
 
 .checkbox {
