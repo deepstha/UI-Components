@@ -294,6 +294,7 @@
 .checkbox {
   position: relative;
   margin-right: 12px;
+  cursor: pointer;
 }
 
 .checkbox__control {
@@ -359,6 +360,19 @@
   fill: #ffffff !important;
   opacity: 1;
   width: 20px;
+}
+
+.checkbox.checked .checkbox__ripple {
+  background: #afafaf;
+  opacity: 0.2;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  top: -50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  bottom: auto;
 }
 
 h1, h2, h3, h4, h5 {
