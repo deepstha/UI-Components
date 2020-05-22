@@ -1,0 +1,39 @@
+@import '../utils/variables'
+
+.custom-control
+    position: relative
+    display: block
+    margin-bottom: 5px
+    &-label
+        color: rgba($color-dark-grey, 1 )
+        font-size: 22px
+        position: relative
+        vertical-align: top
+        &:before, &:after
+            content: ""
+            position: absolute
+            top: .25rem
+            left: -1.5rem
+            display: block
+            width: 0.8rem
+            height: 0.8rem
+            border: 2px solid $color-grey
+            pointer-events: none
+            border-radius: 50%
+
+    &-input
+        opacity: 0
+        &:checked ~
+            .custom
+                &-control
+                    &-label
+                        &:before, &:after
+                            content: ""
+                            width: 0.5rem
+                            height: 0.5rem
+                            border-radius: 50%
+                        &::before
+                            border: none
+                        &::after
+                                background-color: $color-white
+                                border: 5px solid $color-theme
