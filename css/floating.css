@@ -1,0 +1,25 @@
+.floating-label {
+  font-weight: 400;
+  letter-spacing: .009375em;
+  position: absolute;
+  left: 0;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  line-height: 1.15rem;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: text;
+  overflow: hidden;
+  will-change: transform;
+  -webkit-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+}
+
+.floating-label.is-focused, .floating-label.is-active {
+  -webkit-transform: translateY(-70%) scale(0.75);
+  transform: translateY(-70%) scale(0.75);
+  color: #6200ee !important;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=floating.css.map */

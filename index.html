@@ -17,6 +17,37 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
+        <!-- Select Field -->
+        <h4>Text Field</h4>
+        <div class="col-d-5 m-b-5">
+            <div class="selectbox">
+                <div class="selectbox__wrap width-select">
+                    <i class="selectbox__icon-dropdown"></i>
+                    <div class="selectbox__selected-text"></div>
+                    <span class="floating-label">Fruit</span>
+                    <div class="line-ripple"></div>
+                </div>
+                <div class="selectbox__menu menu-surface width-select">
+                    <ul class="list-style-wrap">
+                        <li class="list-item">Apple</li>
+                        <li class="list-item">Banana</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <h4>Button Style</h4>
+        <div class="buttons">
+            <button class="btn btn-primary">Button Primary</button>
+            <button class="btn btn-secondary">Button Secondary</button>
+            <button class="btn btn-success">Button Success</button>
+            <button class="btn btn-danger">Button Danger</button>
+            <button class="btn btn-outline-theme">Button Outline</button>
+            <button class="btn btn-primary">Button</button>
+        </div>
         <!-- Text Field -->
         <h4>Text Field</h4>
         <div class="col-d-5">
@@ -47,69 +78,97 @@
                     </div>
                 </div>
             </div>
-            <br>
-            <!-- Text Field -->
+        </div>
+        <br>
+        <!-- Cards block -->
+
+        <div class="bg-light p-3">
             <h4>Card Item</h4>
             <div class="card card__wrapper">
                 <figure class="img__wrap">
                     <img src="..." alt="" >
                 </figure>
-                <div class="p-2">
+                <div class="p-2 bg-white">
                     <div class="card__title">Card Title</div>
-                    <div class="card__sub-title">Secondary text</div>
+                    <div class="card__sub-title">Secondary Title</div>
                 </div>
             </div>
-                        
-            <br>
-            <br>
-            <!-- Text Field -->
-            <h4>Checkbox List Item</h4>
-            <div class="form-field d-inline-flex m-r-5">
-                <div class="checkbox">
-                    <input type="checkbox" class="checkbox__control" id="check-item">
-                    <div class="checkbox__bg">
-                        <svg class="checkbox__checkmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 125" version="1.1" x="0px" y="0px">
-                            <g stroke="none" stroke-width="1" fill-rule="evenodd">
+            <div class="card card__wrapper">
+                <figure class="img__wrap">
+                    <img src="..." alt="" >
+                </figure>
+                <div class="p-2 bg-white">
+                    <div class="card__title">Card Title</div>
+                    <div class="card__sub-title">Secondary Tile</div>
+                </div>
+            </div>
+        </div>
 
-                                <path class="checkbox__checkmark-path" d="M43.8717381,61.243064 L30.4096681,47.7809939 C29.1733839,46.5447098 27.1682962,46.5478583 25.9296538,47.7865007 C24.6935317,49.0226228 24.6885458,51.0309139 25.924147,52.266515 L41.6344843,67.9768524 C42.8707685,69.2131366 44.8758562,69.2099881 46.1144987,67.9713456 C46.141398,67.9444463 46.1677143,67.9171813 46.1934476,67.8895666 C46.221258,67.8636377 46.2487279,67.8371164 46.2758417,67.8100026 L77.6705794,36.4152648 C78.9103016,35.1755427 78.9086564,33.1639109 77.6725344,31.9277888 C76.4338919,30.6891464 74.4325733,30.6822288 73.1850584,31.9297437 L43.8717381,61.243064 Z"/>
-
-                            </g>
-                        </svg>
+                    
+        <br>
+        <br>
+        <!-- Text Field -->
+        <h4>Checkbox List Item</h4>
+        <div class="card card__wrapper bg-light p-3">
+            <ul class="list-style-none">
+                <li>
+                    <div class="d-inline-flex m-r-5">
+                        <div class="checkbox">
+                            <input type="checkbox" class="checkbox__control" id="check-item">
+                            <div class="checkbox__bg">
+                                <svg class="checkbox__checkmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 125" version="1.1" x="0px" y="0px">
+                                    <g stroke="none" stroke-width="1" fill-rule="evenodd">
+    
+                                        <path class="checkbox__checkmark-path" d="M43.8717381,61.243064 L30.4096681,47.7809939 C29.1733839,46.5447098 27.1682962,46.5478583 25.9296538,47.7865007 C24.6935317,49.0226228 24.6885458,51.0309139 25.924147,52.266515 L41.6344843,67.9768524 C42.8707685,69.2131366 44.8758562,69.2099881 46.1144987,67.9713456 C46.141398,67.9444463 46.1677143,67.9171813 46.1934476,67.8895666 C46.221258,67.8636377 46.2487279,67.8371164 46.2758417,67.8100026 L77.6705794,36.4152648 C78.9103016,35.1755427 78.9086564,33.1639109 77.6725344,31.9277888 C76.4338919,30.6891464 74.4325733,30.6822288 73.1850584,31.9297437 L43.8717381,61.243064 Z"/>
+    
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="checkbox__ripple"></div>
+                        </div>
+                        <label for="check-item">Item 1</label>
                     </div>
-                    <div class="checkbox__ripple"></div>
-                </div>
-                <label for="check-item">Item 1</label>
-            </div>
-            
-            <div class="form-field d-inline-flex">
+
+                </li>
+                <li>
+                    <div class="d-inline-flex m-r-5">
+                        <div class="checkbox">
+                            <input type="checkbox" class="checkbox__control" id="check-item">
+                            <div class="checkbox__bg">
+                                <svg class="checkbox__checkmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 125" version="1.1" x="0px" y="0px">
+                                    <g stroke="none" stroke-width="1" fill-rule="evenodd">
+    
+                                        <path class="checkbox__checkmark-path" d="M43.8717381,61.243064 L30.4096681,47.7809939 C29.1733839,46.5447098 27.1682962,46.5478583 25.9296538,47.7865007 C24.6935317,49.0226228 24.6885458,51.0309139 25.924147,52.266515 L41.6344843,67.9768524 C42.8707685,69.2131366 44.8758562,69.2099881 46.1144987,67.9713456 C46.141398,67.9444463 46.1677143,67.9171813 46.1934476,67.8895666 C46.221258,67.8636377 46.2487279,67.8371164 46.2758417,67.8100026 L77.6705794,36.4152648 C78.9103016,35.1755427 78.9086564,33.1639109 77.6725344,31.9277888 C76.4338919,30.6891464 74.4325733,30.6822288 73.1850584,31.9297437 L43.8717381,61.243064 Z"/>
+    
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="checkbox__ripple"></div>
+                        </div>
+                        <label for="check-item">Item 1</label>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- <div class="d-inline-flex">
                 <div class="checkbox">
                     <input type="checkbox" class="checkbox__control" id="check-item">
                     <div class="checkbox__bg">
                         <svg class="checkbox__checkmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 125" version="1.1" x="0px" y="0px">
                             <g stroke="none" stroke-width="1" fill-rule="evenodd">
-
                                 <path class="checkbox__checkmark-path" d="M43.8717381,61.243064 L30.4096681,47.7809939 C29.1733839,46.5447098 27.1682962,46.5478583 25.9296538,47.7865007 C24.6935317,49.0226228 24.6885458,51.0309139 25.924147,52.266515 L41.6344843,67.9768524 C42.8707685,69.2131366 44.8758562,69.2099881 46.1144987,67.9713456 C46.141398,67.9444463 46.1677143,67.9171813 46.1934476,67.8895666 C46.221258,67.8636377 46.2487279,67.8371164 46.2758417,67.8100026 L77.6705794,36.4152648 C78.9103016,35.1755427 78.9086564,33.1639109 77.6725344,31.9277888 C76.4338919,30.6891464 74.4325733,30.6822288 73.1850584,31.9297437 L43.8717381,61.243064 Z"/>
-
                             </g>
                         </svg>
                     </div>
                     <div class="checkbox__ripple"></div>
                 </div>
                 <label for="check-item">Item 2</label>
-            </div>
+            </div> -->
         </div>
         <br>
         <hr>
     <br>
-    <h4>Button Style</h4>
-    <div class="buttons">
-        <button class="btn btn-primary">Button Primary</button>
-        <button class="btn btn-secondary">Button Secondary</button>
-        <button class="btn btn-success">Button Success</button>
-        <button class="btn btn-danger">Button Danger</button>
-        <button class="btn btn-outline-theme">Button Outline</button>
-        <button class="btn btn-primary">Button</button>
-    </div>
+
 <br>
     <!-- Default unchecked -->
     <h4>Radio Button</h4>

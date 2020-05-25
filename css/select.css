@@ -1,0 +1,87 @@
+.selectbox {
+  position: relative;
+}
+
+.selectbox__menu {
+  display: none;
+  position: absolute;
+  min-width: 112px;
+}
+
+.selectbox__menu.is-active {
+  display: inline-block;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+  top: 56px;
+  left: 0;
+  max-height: 115px;
+}
+
+.selectbox .width-select {
+  width: 250px;
+}
+
+.selectbox .width-select--auto {
+  width: 100%;
+}
+
+.selectbox__wrap {
+  cursor: pointer;
+  background-color: rgba(216, 216, 216, 0.2);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  position: relative;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  width: 100%;
+  height: 56px;
+  max-width: 250px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  will-chamhe: opacity,transform,color;
+}
+
+.selectbox__selected-text {
+  padding: 20px 52px 4px 16px;
+  font-size: 1rem;
+  line-height: 1.72rem;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 56px;
+  min-width: 200px;
+  border: none;
+  border-bottom: 1px solid #d8d8d8;
+  outline: none;
+  background-color: transparent;
+}
+
+.selectbox__selected-text:hover {
+  border-bottom: 2px solid #6200ee;
+}
+
+.selectbox__icon-dropdown {
+  position: absolute;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg width='10' height='5' viewBox='7 10 10 5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' opacity='.54' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E") no-repeat 50%;
+  left: auto;
+  right: 8px;
+  bottom: 16px;
+  height: 24px;
+  width: 24px;
+  pointer-events: none;
+}
+
+.selectbox .floating-label {
+  left: 16px;
+  right: auto;
+  top: 21px;
+  pointer-events: none;
+}
+
+.selectbox .floating-label.is-focused {
+  color: #6200ee;
+}
+/*# sourceMappingURL=select.css.map */

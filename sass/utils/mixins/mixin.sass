@@ -1,0 +1,75 @@
+//  flex
+=display-flex
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+
+// inline flex
+=display-inline-flex
+    display: -webkit-inline-flex
+    display: -ms-inline-flexbox
+    display: inline-flex
+
+// sticky element
+=webkit-sticky
+  position: -webkit-sticky !important
+  position: -moz-sticky !important
+  position: -ms-sticky !important
+  position: -o-sticky !important
+  position: sticky !important
+
+// border element
+=border-dir($direction, $width, $style, $color) 
+  border-#{$direction}: $width $style $color
+
+// border radius
+=border-radius($radius)
+    -webkit-border-radius: $radius
+    -moz-border-radius: $radius 
+    -ms-animation: $radius  
+    -o-border-radius: $radius 
+    -border-radius: $radius
+
+// box shadow
+=box-shadow($box-shadow)
+    -webkit-box-shadow: $box-shadow
+    -moz-box-shadow: $box-shadow
+    -ms-box-shadow: $box-shadow  
+    -o-box-shadow: $box-shadow 
+    -box-shadow: $box-shadow  
+
+// animation frame
+=animation($animation)
+    -webkit-animation: $animation
+    -o-animation: $animation
+    -moz-animation: $animation
+    animation: $animation
+
+// transition-slow
+=transition-slow
+    -webkit-transition: all 0.5s linear
+    -moz-transition: all 0.5s linear
+    -ms-transition: all 0.5s linear
+    -o-transition: all 0.5s linear
+    transition: all 0.5s linear
+
+// transition
+=transition($transition)
+    -webkit-transition: $transition
+    -moz-transition: $transition 
+    -ms-transition: $transition  
+    -o-transition: $transition 
+    transition: $transition 
+
+// transform
+=transform($transform)
+    -webkit-transform: $transform
+    -moz-transform: $transform 
+    -ms-transform: $transform  
+    -o-transform: $transform 
+    transform: $transform 
+// calculate width
+=calc($property, $expression)
+  #{$property}: -moz-calc(#{$expression})
+  #{$property}: -webkit-calc(#{$expression})
+  #{$property}: calc(#{$expression})

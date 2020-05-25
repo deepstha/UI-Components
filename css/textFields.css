@@ -16,7 +16,7 @@
   transition: all 0.2s linear;
 }
 
-.input_control .input_slot.is-focus {
+.input_control .input_slot.is-focused {
   border-color: #6200ee !important;
   border-width: 1px;
 }
@@ -45,11 +45,11 @@
   pointer-events: none;
 }
 
-.input_control .input_slot .text-field label.is-focus {
+.input_control .input_slot .text-field label.is-focused {
   color: #6200ee !important;
 }
 
-.input_control .input_slot .text-field label.is-focus, .input_control .input_slot .text-field label.is-active {
+.input_control .input_slot .text-field label.is-focused, .input_control .input_slot .text-field label.is-active {
   -webkit-transform: translateY(-28px);
           transform: translateY(-28px);
   background-color: white;
@@ -107,7 +107,7 @@
   transition: all 0.2s linear;
 }
 
-.input_control.regular .input_slot.is-focus, .input_control.regular .input_slot.is-outline {
+.input_control.regular .input_slot.is-focused, .input_control.regular .input_slot.is-outline {
   border-color: #6200ee !important;
 }
 
@@ -135,13 +135,13 @@
   pointer-events: none;
 }
 
-.input_control.regular .input_slot .text-field label.is-focus {
+.input_control.regular .input_slot .text-field label.is-focused {
   color: #6200ee !important;
 }
 
-.input_control.regular .input_slot .text-field label.is-focus, .input_control.regular .input_slot .text-field label.is-active {
-  -webkit-transform: translateY(-23px);
-          transform: translateY(-23px);
+.input_control.regular .input_slot .text-field label.is-focused, .input_control.regular .input_slot .text-field label.is-active {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
   background-color: white;
   padding: 0;
   font-size: 65%;
