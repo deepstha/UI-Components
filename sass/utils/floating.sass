@@ -19,7 +19,8 @@
         will-change: transform
         +transition(0.2s all linear)
         &.is
+            &-focused
+                color: $color-primary
             &-focused, &-active
                 +transform(translateY(-70%) scale(.75))
-                color: $color-primary
                 font-size: 1rem

@@ -17,10 +17,13 @@
   transition: 0.2s all linear;
 }
 
+.floating-label.is-focused {
+  color: #6200ee;
+}
+
 .floating-label.is-focused, .floating-label.is-active {
   -webkit-transform: translateY(-70%) scale(0.75);
   transform: translateY(-70%) scale(0.75);
-  color: #6200ee;
   font-size: 1rem;
 }
 /*# sourceMappingURL=floating.css.map */
