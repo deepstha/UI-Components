@@ -1,3 +1,33 @@
+@-webkit-keyframes popOut {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    top: 40;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    top: 56px;
+  }
+}
+
+@keyframes popOut {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    top: 40px;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    top: 56px;
+  }
+}
+
 .btn {
   position: relative;
   display: inline-block;
@@ -385,6 +415,36 @@
   opacity: .9;
 }
 
+@-webkit-keyframes popOut {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    top: 40;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    top: 56px;
+  }
+}
+
+@keyframes popOut {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    top: 40px;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    top: 56px;
+  }
+}
+
 .selectbox {
   position: relative;
 }
@@ -393,6 +453,8 @@
   display: none;
   position: absolute;
   min-width: 112px;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
 }
 
 .selectbox__menu.is-active {
@@ -402,14 +464,10 @@
   top: 56px;
   left: 0;
   max-height: 220px;
-}
-
-.selectbox .width-select {
-  width: 250px;
-}
-
-.selectbox .width-select--auto {
-  width: 100%;
+  -webkit-animation: popOut 0.1s linear;
+  animation: popOut 0.1s linear;
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 
 .selectbox__wrap {
@@ -457,26 +515,27 @@
 
 .selectbox__icon-dropdown {
   position: absolute;
-  border-top: 5px solid #8f8f8f;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
+  border-top: 6px solid #8f8f8f;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
   width: 0 !important;
   height: 0 !important;
   left: auto;
-  right: 15px;
+  right: 14px;
   bottom: 42%;
   pointer-events: none;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: all 0.1s linear;
-  transition: all 0.1s linear;
+  -webkit-transition: all 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  transition: all 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
 }
 
 .selectbox__icon-dropdown.is-focused {
-  bottom: 38%;
-  border-top: 5px solid #6200ee;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
+  bottom: 37%;
+  right: 15px;
+  border-top: 6px solid #6200ee;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
   width: 0 !important;
   height: 0 !important;
   -webkit-transform: rotate(180deg);
@@ -485,6 +544,14 @@
 
 .selectbox.is-focused .selectbox__selected-text {
   border-bottom: 2px solid #6200ee;
+}
+
+.selectbox .width-select {
+  width: 250px;
+}
+
+.selectbox .width-select--auto {
+  width: 100%;
 }
 
 .selectbox .floating-label {

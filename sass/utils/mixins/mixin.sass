@@ -21,11 +21,11 @@
     position: sticky !important
 
 // animation frame
-=animation($animation)
-    -webkit-animation: $animation
-    -o-animation: $animation
-    -moz-animation: $animation
-    animation: $animation
+=animation($animation, $time, $transition)
+    -webkit-animation: $animation $time $transition 
+    -o-animation: $animation $time $transition
+    -moz-animation: $animation $time $transition
+    animation: $animation $time $transition
 
 // transition-slow
 =transition-slow
@@ -50,6 +50,13 @@
     -ms-transform: $transform  
     -o-transform: $transform 
     transform: $transform 
+
+// Cubic transition    
+=cubic
+  -webkit-transition: all 0.2s cubic-bezier(0.250, 0.250, 0.750, 0.750)
+  -moz-transition: all 0.2s cubic-bezier(0.250, 0.250, 0.750, 0.750)
+  -o-transition: all 0.2s cubic-bezier(0.250, 0.250, 0.750, 0.750)
+  transition: all 0.2s cubic-bezier(0.250, 0.250, 0.750, 0.750)
 
 // calculate width
 =calc($property, $expression)

@@ -1,5 +1,6 @@
 @import '../utils/variables'
 @import '../utils/mixins/mixin'
+@import '../utils/keyframes'
 
 .selectbox
   position: relative
@@ -7,6 +8,7 @@
     display: none
     position: absolute
     min-width: 112px
+    +transform(scale(0.8))
     &.is
       &-active
         display: inline-block
@@ -14,12 +16,8 @@
         top: 56px
         left: 0
         max-height: 220px
-
-  .width
-    &-select
-      width: 250px
-      &--auto
-        width: 100%
+        +animation(popOut, 0.1s, linear)
+        +transform(scale(1))
   &__wrap
     cursor: pointer
     background-color: rgba($color-light-grey, 1)
@@ -55,25 +53,29 @@
   &__icon
     &-dropdown
       position: absolute
-      +arrow-down(5px, solid, $color-grey)
+      +arrow-down(6px, solid, $color-grey)
       // background: url("data:image/svg+xml;charset=utf-8,%3Csvg width='10' height='5' viewBox='7 10 10 5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' opacity='.54' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E") no-repeat 50%
       left: auto
-      right: 15px
+      right: 14px
       bottom: 42%
       pointer-events: none
       +transform(rotate(0deg))
-      transition: all 0.1s linear
+      +cubic
       &.is-focused
         bottom: 37%
-        +arrow-down(5px, solid, $color-primary)
+        right: 15px
+        +arrow-down(6px, solid, $color-primary)
         +transform(rotate(180deg))
-
   &.is-focused
     .selectbox
       &__selected
         &-text
           +border-dir(bottom, 2px, solid, $color-primary) 
-  
+  .width
+    &-select
+      width: 250px
+      &--auto
+        width: 100% 
   .floating
     &-label
       left: 16px
