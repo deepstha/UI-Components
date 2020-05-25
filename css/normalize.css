@@ -101,6 +101,10 @@ input {
   background-color: whitesmoke;
 }
 
+.list-item:first-child {
+  background-color: whitesmoke;
+}
+
 .selected-item {
   background-color: rgba(98, 0, 238, 0.1);
 }
