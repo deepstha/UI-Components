@@ -67,6 +67,7 @@ $(function () {
         $(this).parent('').toggleClass('is-focused');
         $(this).next().toggleClass('is-active');
         $(this).next('.menu-surface').toggleClass('menu-surface--open');
+        $('.selectbox__icon-dropdown').css('transform', 'rotate(180deg)' )
     });
     $(document).on("click", function (e) {
         $('.selectbox .selectbox__wrap .floating-label.is-focused').removeClass('is-focused');
@@ -86,8 +87,16 @@ $(function () {
         $('.selectbox .selectbox__wrap').next().removeClass('is-active');
         $('.selectbox .selectbox__wrap').next('.menu-surface').toggleClass('menu-surface--open');
         $('.selectbox__selected-text').text(text);
+        $('.selectbox__icon-dropdown').css('transform', 'rotate(0)' )
 
-        
+        // var open =  $('.selectbox .selectbox__wrap').next('.menu-surface').hasClass('menu-surface--open');
+        // self.find('label').hasClass('is-focused')
+        // if($('.selectbox .selectbox__wrap').next('.menu-surface').hasClass('menu-surface--open')){
+        //     $('.selectbox__icon-dropdown').css('transform', 'rotate(180deg)' )
+        // }
+        // else{
+        //     $('.selectbox__icon-dropdown').css('transform', 'rotate(0)' )
+        // }
         // alert('index is:' + index + ' and text is' + text);
 
     });
