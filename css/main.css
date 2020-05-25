@@ -414,7 +414,7 @@
 
 .selectbox__wrap {
   cursor: pointer;
-  background-color: rgba(216, 216, 216, 0.2);
+  background-color: whitesmoke;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   position: relative;
@@ -458,8 +458,8 @@
   width: 0 !important;
   height: 0 !important;
   left: auto;
-  right: 8px;
-  bottom: 40%;
+  right: 15px;
+  bottom: 42%;
   pointer-events: none;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -486,6 +486,7 @@
   right: auto;
   top: 21px;
   pointer-events: none;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .selectbox .floating-label.is-focused {
@@ -521,6 +522,7 @@
 }
 
 .floating-label {
+  font-size: 1rem;
   font-weight: 400;
   letter-spacing: .009375em;
   position: absolute;
