@@ -2,7 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../sass/utils/mixins/mixin.sass"
+        "../sass/utils/mixins/mixin.sass",
+        "../sass/utils/variables.sass"
     ],
     "names": [],
     "file": "mixin.css"

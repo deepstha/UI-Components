@@ -67,14 +67,16 @@ $(function () {
         $(this).parent('').toggleClass('is-focused');
         $(this).next().toggleClass('is-active');
         $(this).next('.menu-surface').toggleClass('menu-surface--open');
-        $('.selectbox__icon-dropdown').css('transform', 'rotate(180deg)' )
+        $('.selectbox__icon-dropdown').toggleClass('is-focused');
     });
+
     $(document).on("click", function (e) {
         $('.selectbox .selectbox__wrap .floating-label.is-focused').removeClass('is-focused');
         $('.selectbox .selectbox__wrap').parent('').removeClass('is-focused');
         $('.selectbox .selectbox__wrap').next().removeClass('is-active');
         $('.selectbox .selectbox__wrap').next('.menu-surface').removeClass('menu-surface--open');
         $('.selectbox .selectbox__wrap').find('.floating-label').removeClass('is-focused');
+        $('.selectbox__icon-dropdown').removeClass('is-focused');
     });
 
     $('.selectbox__menu ul li').click(function(e){
@@ -87,7 +89,7 @@ $(function () {
         $('.selectbox .selectbox__wrap').next().removeClass('is-active');
         $('.selectbox .selectbox__wrap').next('.menu-surface').toggleClass('menu-surface--open');
         $('.selectbox__selected-text').text(text);
-        $('.selectbox__icon-dropdown').css('transform', 'rotate(0)' )
+        $('.selectbox__icon-dropdown').toggleClass('is-focused');
 
         // var open =  $('.selectbox .selectbox__wrap').next('.menu-surface').hasClass('menu-surface--open');
         // self.find('label').hasClass('is-focused')
