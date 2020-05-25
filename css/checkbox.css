@@ -58,8 +58,8 @@
 }
 
 .checkbox.checked .checkbox__bg {
-  background-color: #6200ee !important;
-  border-color: #6200ee !important;
+  background-color: #6200ee;
+  border-color: #6200ee;
 }
 
 .checkbox.checked .checkbox__checkmark {

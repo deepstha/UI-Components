@@ -44,11 +44,11 @@
       height: 56px
       min-width: 200px
       border: none
-      +border-dir(bottom, 1px, solid, $color-light-grey)
+      +border-dir(bottom, 1px, solid, #999999)
       outline: none
       background-color: transparent 
       &:hover
-        +border-dir(bottom, 2px, solid, $color-primary) 
+        +border-dir(bottom, 2px, solid, #666666) 
   &__icon
     &-dropdown
       position: absolute
@@ -58,8 +58,17 @@
       bottom: 16px
       height: 24px
       width: 24px
-      transform .15s cubic-bezier(.4,0,.2,1)
       pointer-events: none
+      +transform(rotate(0deg))
+      transition: all 0.3s linear
+
+  &.is-focused
+    .selectbox
+      &__icon-dropdown
+        +transform(rotate(180deg))
+      &__selected
+        &-text
+          +border-dir(bottom, 2px, solid, $color-primary) 
   .floating
     &-label
       left: 16px

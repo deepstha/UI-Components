@@ -19,7 +19,7 @@
 .floating-label.is-focused, .floating-label.is-active {
   -webkit-transform: translateY(-70%) scale(0.75);
   transform: translateY(-70%) scale(0.75);
-  color: #6200ee !important;
+  color: #6200ee;
   font-size: 1rem;
 }
 /*# sourceMappingURL=floating.css.map */

@@ -54,13 +54,13 @@
   height: 56px;
   min-width: 200px;
   border: none;
-  border-bottom: 1px solid #d8d8d8;
+  border-bottom: 1px solid #999999;
   outline: none;
   background-color: transparent;
 }
 
 .selectbox__selected-text:hover {
-  border-bottom: 2px solid #6200ee;
+  border-bottom: 2px solid #666666;
 }
 
 .selectbox__icon-dropdown {
@@ -72,6 +72,19 @@
   height: 24px;
   width: 24px;
   pointer-events: none;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.selectbox.is-focused .selectbox__icon-dropdown {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.selectbox.is-focused .selectbox__selected-text {
+  border-bottom: 2px solid #6200ee;
 }
 
 .selectbox .floating-label {
