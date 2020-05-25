@@ -64,7 +64,7 @@ $(function () {
         e.stopPropagation();
         // $('.selectbox .selectbox__wrap').find('.floating-label').removeClass('is-focused');
         $(this).find('.floating-label').toggleClass('is-focused');
-        $(this).parent('').toggleClass('is-focused');
+        $(this).parent('').addClass('is-focused');
         $(this).next().toggleClass('is-active');
         $(this).next('.menu-surface').toggleClass('menu-surface--open');
         $('.selectbox__icon-dropdown').toggleClass('is-focused');

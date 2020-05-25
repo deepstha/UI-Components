@@ -479,6 +479,7 @@
 
 .selectbox.is-focused .selectbox__selected-text {
   border-bottom: 2px solid #6200ee;
+  color: rgba(0, 0, 0, 0.85);
 }
 
 .selectbox .floating-label {
